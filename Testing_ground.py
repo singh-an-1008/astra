@@ -79,38 +79,7 @@ send_mail()
     
 
 
-def send_email(sender_email, receiver_email, subject, message, smtp_server, smtp_port):
-    logging.basicConfig(filename='email.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-    try:
-        # Create an instance of EmailMessage
-        email = EmailMessage()
-        email['From'] = sender_email
-        email['To'] = receiver_email
-        email['Subject'] = subject
-        email.set_content(message)
-
-        # Connect to the SMTP server
-        with smtplib.SMTP(smtp_server, smtp_port) as server:
-            # Log in to the SMTP server if authentication is required
-            # server.login(smtp_username, smtp_password)
-
-            # Send the email
-            server.send_message(email)
-
-        logging.info('Email sent successfully.')
-    except Exception as e:
-        logging.error(f'Error sending email: {str(e)}')
-
-# Example usage
-sender_email = 'your_email@example.com'
-receiver_email = 'recipient@example.com'
-subject = 'Hello, World!'
-message = 'This is a test email sent from Python.'
-smtp_server = 'smtp.example.com'
-smtp_port = 587
-
-send_email(sender_email, receiver_email, subject, message, smtp_server, smtp_port)
 
     
    
