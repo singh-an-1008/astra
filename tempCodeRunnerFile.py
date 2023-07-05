@@ -41,6 +41,74 @@ def index():
     except Exception as e:
         print("The error has been due to", str(e))
 index()
+####################################################
+try:
+    """ This function gives the index of the words entered """
+    def reverse():
+        T=input("Enter your choice")
+        for i in range(len(T)-1,-1,-1):
+            print(i,T[i])
+        return
+    reverse()
+except Exception as e:
+    print(e)
+
+
+import sys
+print(sys.argv[1])
+import time
+time.asctime()
+
+
+
+
+
+
+
+
 ###
-x=(lambda x: x ** 3, 2, 3)
-x
+x=lambda x: x ** 3, 2, 3
+print(x)
+cube=lambda x: x ** 3, 2, 3
+f(cube, 2,3);
+
+x=92 
+if x%2==0 :
+    print("lullaby")
+x=92; print("greaet") if x%2==0 else print("pumbs")
+a=[2,3,4,5,6,7,8,8]
+[x*2 for x in a if x%2==0 ]
+s=[2,3,4,5,6]
+x=[4,5,6,7,8]
+a=zip(s,x)
+[ i[0] +i[1] for i in a]
+a="bukka reddy"
+[ x  for x in enumerate(a)]
+a=["pumba","timon","raskekamar"]
+s.split(a)
+len(s)
+
+import os
+def readt(tempo):
+    try:
+        with open('tempo','r') as files:
+            content=files.read()
+            print(content)
+    except Exception as e:
+        print("An error has occured",str(e))
+readt('tempo')
+
+
+def read_text_file(tempo):
+    try:
+        with open(tempo, 'r') as file:
+            content = file.read()  # Read the entire file content
+
+        print(content)  # Print or process the content as needed
+
+    except FileNotFoundError:
+        print("File not found:", )
+    except IOError:
+        print("Error reading the file:", filename)
+
+read_text_file(tempo)
