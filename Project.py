@@ -96,7 +96,15 @@ def reverse():
     except IOError:
         print("Error reading the file:", 'random')
 reverse()
-        
+
+
+import os
+import platform, socket
+print("Ip_adress:",socket.gethostbyname(socket.gethostname()))
+
+
+socket.gethostbyname(socket.gethostname())
+socket.gesthostbyname()
             
     
             
