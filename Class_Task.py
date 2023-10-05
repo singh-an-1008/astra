@@ -328,16 +328,7 @@ def word_read():
         print("An error occurred while reading the Word file:", str(e))
 word_read()
 
-print(" Thank you for your precious time in reviewing, feedback will be highly valued")
-
-
-            
-            
-        
-        
-        
-                
-                
+print(" Thank you for your precious time in reviewing, feedback will be highly appreciated")
         
         
             
